@@ -21,7 +21,7 @@ DEPOT_PATH = find_depot_tools.add_depot_tools_to_path()
 def Update():
     path = os.path.join(BUILDTOOLS, 'update.sh')
     return subprocess.call([
-      '/bin/bash', path, '--ninja', '--gn', '--clang'], cwd=SRC_ROOT)
+      '/bin/bash', path, '--ninja', '--gn', '--toolchain'], cwd=SRC_ROOT)
 
 
 def UpdateOnWindows():
